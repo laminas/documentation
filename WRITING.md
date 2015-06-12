@@ -75,7 +75,11 @@ In general:
 - Documentation filenames must consist of lowercase ASCII letters, digits, periods, and dashes only.
 
 Occasionally, you will need to include images for documentation; e.g., screenshots. Place these in
-`doc/html/image/`, and commit them to the repository.
+`doc/html/image/`, and commit them to the repository. When doing so, you will also need to:
+
+- Remove the line `doc/html/` from the project `.gitignore` file.
+- Create the `doc/html/image/` directory.
+- Create a `doc/html/.gitignore` file with the contents `*.html`.
 
 ## Rendering Documentation
 
