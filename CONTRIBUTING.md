@@ -119,4 +119,8 @@ $ php -S 0.0.0.0:8000 -t doc/html/
 After starting that, you can browse to http://localhost:8000 to view the rendered documentation.
 
 The above will also work for documentation in this repository.
-\n\n## Conduct\n\nPlease see our [CONDUCT.md](CONDUCT.md) to understand expected behavior when interacting with others in the project.
+
+
+## Conduct
+
+Please see our [CONDUCT.md](CONDUCT.md) to understand expected behavior when interacting with others in the project.
