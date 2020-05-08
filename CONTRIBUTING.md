@@ -15,17 +15,18 @@ To do so, you first need to do three things; these are:
 To complete these steps, please follow the instructions below.
 
 1. [Install MkDocs].
-2. Clone the [documentation-theme repository] locally.
+2. Install [the PyMdown Extensions].
+3. Clone the [documentation-theme repository] locally.
     ```
     git clone git@github.com:laminas/documentation-theme.git documentation-theme
     ```
-3. Copy the theme directory from the cloned documentation-theme repository to the root directory of this project.
-4. Replace lines 91 and 92 of `mkdocs.yml` with the following Yaml snippet, changing them to suit the repository that you are working with.
+4. Copy the theme directory from the cloned documentation-theme repository to the root directory of this project.
+5. Add the following Yaml snippet to `mkdocs.yml`, changing it to suit the repository that you are working with.
     ```yaml
     # The following example assumes that you are working with laminas-form
-    repo_url: 'https://github.com/laminas/laminas-form'
+    repo_url: 'https://github.com/<your-project>'
     extra:
-        repo_name: laminas/laminas-form
+        repo_name: <your-project>
         project: Components
         base_url: https://docs.laminas.dev/
         project_url: https://docs.laminas.dev/components/
@@ -41,7 +42,7 @@ To complete these steps, please follow the instructions below.
             toc_depth: 2
     ```
 
-When you have completed each of these steps then, from the root directory of the project, run `mkdocs serve &`.
+When you have completed each of these steps then, from the root directory of the project, run `mkdocs serve`.
 This builds the documentation locally, making it available on `http://127.0.0.1:8000`, if the port is not already in use, and actively watch for changes.
 If changes are detected, the documentation is automatically regenerated, saving you the trouble of having to do so manually.
 
@@ -59,7 +60,7 @@ INFO    -  Start watching changes
 INFO    -  Start detecting changes
 ```
 
-Additionally, when you view the documentation, it should be properly themed, similar to the following screenshot.
+When you view the documentation, it should be properly themed, similar to the following screenshot.
 
 ![Example of locally generated Laminas documentation](/images/example-of-generated-documentation.png)
 
@@ -72,3 +73,4 @@ If you have trouble with any of these steps, come and ask for help in [the Lamin
 [MkDocs]: https://www.mkdocs.org/
 [Markdown format]: https://www.markdownguide.org/
 [the Laminas Slack #documentation channel]: https://laminas.slack.com
+[the PyMdown Extensions]: https://facelessuser.github.io/pymdown-extensions/installation/
