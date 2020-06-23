@@ -20,13 +20,15 @@ To complete these steps, please follow the instructions below.
     ```
     git clone git@github.com:laminas/documentation-theme.git documentation-theme
     ```
-4. Copy the theme directory from the cloned documentation-theme repository to the root directory of this project.
-5. Add the following Yaml snippet to `mkdocs.yml`, changing it to suit the repository that you are working with.
+4. Symlink the theme directory from the cloned documentation-theme repository, to the root directory of this project.
+5. Add the symlinked directory to .gitignore, to exclude it from being versioned with the project.
+6. Add the following Yaml snippet to `mkdocs.yml`, changing it to suit the repository that you are working with.
     ```yaml
     # The following example assumes that you are working with laminas-form
     repo_url: 'https://github.com/<your-project>'
     extra:
         repo_name: <your-project>
+        # 'Mezzio' and 'MVC' can also be used as the project value
         project: Components
         base_url: https://docs.laminas.dev/
         project_url: https://docs.laminas.dev/components/
