@@ -7,9 +7,8 @@ changes and milestones for the Laminas Project and related subproject, and to sh
 
 To prepare your local development environment to build the documentation locally, follow the steps below:
 
-1. Install [Python 3](https://www.python.org/downloads/) and [PIP](https://pip.pypa.io/en/stable/installing/)
-2. Install the [Python PyMdown extension](https://facelessuser.github.io/pymdown-extensions/installation/#requirements)
-3. [Install MkDocs](https://www.mkdocs.org/#installation) and all of its dependencies
+1. [Install MkDocs](https://www.mkdocs.org/#installation) and all of its dependencies (The installation description for MkDocs also includes the installation of Python.)
+2. Install the [Python PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/installation/#installation_1)
 
 ## Building the Documentation Locally
 
